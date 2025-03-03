@@ -148,6 +148,7 @@ export default function UserList() {
                             </tr>
                         </thead>
                         <tbody>
+                            {users.map(user => <UserListItem key={user._id} {...user} />)}
                             <UserListItem />
                         </tbody>
                     </table>
