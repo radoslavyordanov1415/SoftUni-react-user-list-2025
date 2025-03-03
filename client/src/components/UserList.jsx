@@ -1,8 +1,18 @@
+import { useEffect } from "react";
+
+import userServices from "../services/userServices.js";
+
 import Pagination from "./Pagination";
 import Search from "./Search";
 import UserListItem from "./UserListItem";
 
 export default function UserList() {
+    useEffect(() => {
+        userServices.getAll()
+            .then(result => {
+                console.log(result);
+            })
+    }, []);
     return (
         <>
             {/* Section component  */}
