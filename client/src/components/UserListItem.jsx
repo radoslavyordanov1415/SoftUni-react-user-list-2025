@@ -5,7 +5,7 @@ export default function UserListItem({
     lastName,
     email,
     phoneNumber,
-    imageURL,
+    imageUrl,
     createdAt
 }) {
 
@@ -14,7 +14,7 @@ export default function UserListItem({
             <tr>
                 <td>
                     <img
-                        src={imageURL}
+                        src={imageUrl}
                         alt={`${firstName}'s profile`}
                         className="image"
                     />
